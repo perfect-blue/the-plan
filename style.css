@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #e0e0e0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    height: 95%;
+    gap: 10px;
+    padding: 10px;
+}
+
+.canvas-section {
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    border: 2px solid #444;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.text-section {
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #444;
+    border-radius: 4px;
+}
+
+.text-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.text-content {
+    padding-bottom: 20px;
+}
+
+.scroll-indicator {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 8px;
+    height: 60px;
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 4px;
+    opacity: 0.7;
+}
+
+.scroll-thumb {
+    width: 100%;
+    background-color: #666;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    transition: top 0.1s, height 0.1s;
+}
+
+.navbar {
+    height: 5%;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.7);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    gap: 5px;
+}
+
+.nav-item {
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: rgba(85, 85, 85, 0.8);
+}
+
+.clock {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px 15px;
+    /* Moved to the far right */
+    order: 1;
+    margin-left: 20px;
+}
