@@ -13,6 +13,10 @@ body {
     background-color: #e0e0e0;
 }
 
+.hidden {
+    display: none;
+}
+
 .main-content {
     display: flex;
     flex-direction: row;
